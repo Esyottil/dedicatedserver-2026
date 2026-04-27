@@ -1,4 +1,22 @@
-//сделай как у танчиков
+//Г±Г¤ГҐГ«Г Г© ГЄГ ГЄ Гі ГІГ Г­Г·ГЁГЄГ®Гў
+//        .___         .___.__               __             .___                                               _______________   ________  ________
+//      __| _/____   __| _/|__| ____ _____ _/  |_  ____   __| _/______ ______________  __ ___________          \_____  \   _  \  \_____  \/  _____/
+//     / __ |/ __ \ / __ | |  |/ ___\\__  \\   __\/ __ \ / __ |/  ___// __ \_  __ \  \/ // __ \_  __ \  ______  /  ____/  /_\  \  /  ____/   __  \ 
+//    / /_/ \  ___// /_/ | |  \  \___ / __ \|  | \  ___// /_/ |\___ \\  ___/|  | \/\   /\  ___/|  | \/ /_____/ /       \  \_/   \/       \  |__\  \
+//    \____ |\___  >____ | |__|\___  >____  /__|  \___  >____ /____  >\___  >__|    \_/  \___  >__|            \_______ \_____  /\_______ \_____  /
+//         \/    \/     \/         \/     \/          \/     \/    \/     \/                 \/                        \/     \/         \/     \/ 
+
+
+
+//    ___.                                        __                 
+//    \_ |__ ___.__.   ___________ ___.__._______/  |_  ____   ____  
+//     | __ <   |  | _/ ___\_  __ <   |  |\____ \   __\/  _ \_/ __ \ 
+//     | \_\ \___  | \  \___|  | \/\___  ||  |_> >  | (  <_> )  ___/ 
+//     |___  / ____|  \___  >__|   / ____||   __/|__|  \____/ \___  >
+//         \/\/           \/       \/     |__|                    \/ 
+
+Discord: cryptowallettelegram
+
 
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -420,13 +438,13 @@ cFlowChartManagerstate CFlowchartManager_GetCurrentState_p;
 
 __int64 __fastcall CFlowchartManager_GetCurrentState()
 {
-    return 0; // нет смысла т.к либо true либо false
+    return 0; // Г­ГҐГІ Г±Г¬Г»Г±Г«Г  ГІ.ГЄ Г«ГЁГЎГ® true Г«ГЁГЎГ® false
 }
 
 bool __fastcall CFlowChartManager_IsState(void* pointer, int state)
 {
     return state == 0; 
-    // т.к мы вырезали эту структуру, то this1 - нулевый поинтер, мы реализуем тоже самое. Ибо this->m_currentState тот же самый int state. Int state == 0;
+    // ГІ.ГЄ Г¬Г» ГўГ»Г°ГҐГ§Г Г«ГЁ ГЅГІГі Г±ГІГ°ГіГЄГІГіГ°Гі, ГІГ® this1 - Г­ГіГ«ГҐГўГ»Г© ГЇГ®ГЁГ­ГІГҐГ°, Г¬Г» Г°ГҐГ Г«ГЁГ§ГіГҐГ¬ ГІГ®Г¦ГҐ Г±Г Г¬Г®ГҐ. Г€ГЎГ® this->m_currentState ГІГ®ГІ Г¦ГҐ Г±Г Г¬Г»Г© int state. Int state == 0;
 }
 
 struct SInstantAwardDesc {
@@ -545,7 +563,7 @@ void __fastcall COnlineAccount__Update(COnlineAccount* this1)
     iLastState = this1->m_state;
 
 
-    //switch (this1->m_state) { // не буит работать т.к оно поэтапно идет
+    //switch (this1->m_state) { // Г­ГҐ ГЎГіГЁГІ Г°Г ГЎГ®ГІГ ГІГј ГІ.ГЄ Г®Г­Г® ГЇГ®ГЅГІГ ГЇГ­Г® ГЁГ¤ГҐГІ
     //    case ECS_WaitingForConnection: this1->m_state = ECS_WaitingForDisconnect; break;
     //    case ECS_WaitingForDisconnect: this1->m_state = ECS_Connected; break;
     //    case ECS_Connected: break;
@@ -1369,7 +1387,7 @@ nCGameRules_BalancePlayers mnCGameRules_BalancePlayers_p;
 
 void __fastcall CGameRules_BalancePlayers(void* this1, bool reset)
 {
-    return; /* нахуй он нужен ваще? я не понимаю */
+    return; /* Г­Г ГµГіГ© Г®Г­ Г­ГіГ¦ГҐГ­ ГўГ Г№ГҐ? Гї Г­ГҐ ГЇГ®Г­ГЁГ¬Г Гѕ */
 }
 
 
@@ -1459,7 +1477,7 @@ void __fastcall KillPhysicsThread(void* a1)
 void FixKillPhyicsThread() {
     WriteMemory((void*)0x1414243AF, "\x90\x90\x90\x90\x90\x90\x90\x90\x90", 9);
 
-    //TODO: тут мы поставили !a1->bDedicatedServer на a1->bDedicatedServer потому чта ебланы забыли то шо эта надо для дедика
+    //TODO: ГІГіГІ Г¬Г» ГЇГ®Г±ГІГ ГўГЁГ«ГЁ !a1->bDedicatedServer Г­Г  a1->bDedicatedServer ГЇГ®ГІГ®Г¬Гі Г·ГІГ  ГҐГЎГ«Г Г­Г» Г§Г ГЎГ»Г«ГЁ ГІГ® ГёГ® ГЅГІГ  Г­Г Г¤Г® Г¤Г«Гї Г¤ГҐГ¤ГЁГЄГ 
     //TODO: jnz -> jz
     //TODO: StreamEngine initializing....
 
@@ -1592,7 +1610,7 @@ DWORD StartDedicated(LPVOID param)
         AIInit();
         FixKillPhyicsThread();
         MhCreateAndEnableHook(*CGame_Init_p, CGame_Init, (LPVOID*)&CGame_Init_p);
-                    //MhCreateAndEnableHook((void*)0x141C5AB80, SSADSDFSDFSDFSDF15им
+                    //MhCreateAndEnableHook((void*)0x141C5AB80, SSADSDFSDFSDFSDF15ГЁГ¬
                     // , (LPVOID*)&SADSDFSDFSDFSDF15_p);
 
 
@@ -1609,7 +1627,7 @@ DWORD StartDedicated(LPVOID param)
                 MhCreateAndEnableHook(*SSetRewardsInfoSerializer_OnRequest_p, SetRewardsInfoSerializer_OnRequest, (LPVOID*)&SSetRewardsInfoSerializer_OnRequest_p);
         MhCreateAndEnableHook(*CScriptBind_GameRules_DisconnectToLobby_p, ScriptBind_GameRules_DisconnectToLobby, (LPVOID*)&CScriptBind_GameRules_DisconnectToLobby_p);
 
-        //TODO: фикс восход
+        //TODO: ГґГЁГЄГ± ГўГ®Г±ГµГ®Г¤
 
         //MhCreateAndEnableHook((void*)0x141B89F90, sub_14083A610, (LPVOID*)&CAbstractServerInfo__OnGameStarted_p3);
         //MhCreateAndEnableHook((void*)0x140A712C0, CSM_HoldEntity_Finish, (LPVOID*)&CSM_HoldEntityFinish_p);
