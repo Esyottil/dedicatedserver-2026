@@ -2,4 +2,4 @@
 ---
 **GameClient:** `warfacedistrib607`
 ---
-**Автор:** GitHub: [cryptoeDev](https://github.com/cryptoeDev) Discord: cryptowallettelegram
+**Автор:** GitHub: [cryptoeDev](https://github.com/cryptoeDev) Discord: `cryptowallettelegram`
